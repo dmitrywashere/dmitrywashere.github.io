@@ -26,7 +26,7 @@ If you are interested in my specific configuration, here it is
 
 
 
-![Screenshot My Config](./assets/images/nested-proxmox/image20.png "image_tooltip")
+![Screenshot My Config](/assets/images/nested-proxmox/image20.png "image_tooltip")
 
 
 
@@ -40,7 +40,7 @@ If you are interested in my specific configuration, here it is
 
 
 
-![alt_text](./assets/images/nested-proxmox/image3.png "image_tooltip")
+![alt_text](/assets/images/nested-proxmox/image3.png "image_tooltip")
 
 
 
