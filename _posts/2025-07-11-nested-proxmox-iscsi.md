@@ -1,9 +1,11 @@
+---
 title: "Setting Up Nested Proxmox VE iSCSI Configuration with Pure Storage FlashArray"
 date: 2025-07-12
 author: "Dmitry Gorbatov, Consulting Systems Engineer, Pure Storage"
 description: "A guide to configuring nested Proxmox environments with iSCSI storage for evaluation and functionality testing"
 tags: [proxmox, iscsi, virtualization, purestorage, flasharray]
-# ** Nested Proxmox VE iSCSI Configuration with Pure Storage FlashArray ** 
+---
+# **Nested Proxmox VE iSCSI Configuration with Pure Storage FlashArray** 
 
 
 ## **Purpose**
