@@ -1,4 +1,9 @@
-# Nested Proxmox VE iSCSI Configuration with Pure Storage FlashArray 
+title: "Setting Up Nested Proxmox VE iSCSI Configuration with Pure Storage FlashArray"
+date: 2025-07-12
+author: "Dmitry Gorbatov, Consulting Systems Engineer, Pure Storage"
+description: "A guide to configuring nested Proxmox environments with iSCSI storage for evaluation and functionality testing"
+tags: [proxmox, iscsi, virtualization, purestorage, flasharray]
+# ** Nested Proxmox VE iSCSI Configuration with Pure Storage FlashArray ** 
 
 
 ## **Purpose**
@@ -40,7 +45,7 @@ If you are interested in my specific configuration, here it is
 
 
 
-![alt_text](/assets/images/nested-proxmox/image3.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image3.png "image_tooltip")
 
 
 
@@ -50,7 +55,7 @@ If you are interested in my specific configuration, here it is
 
 
 
-![alt_text](../assets/images/nested-proxmox/image15.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image15.png "image_tooltip")
 
 
 If the updates failed, you will need to add no-subscription repositories by editing the sources.list
@@ -61,30 +66,30 @@ nano /etc/apt/sources.list
 ```
 
 
-![alt_text](../assets/images/nested-proxmox/image12.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image12.png "image_tooltip")
 
 
 It should look like this:
 
 
 
-![alt_text](../assets/images/nested-proxmox/image27.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image27.png "image_tooltip")
 
 
 
 ### Network Interfaces configuration for nested Proxmox
 
-You will need to have 2 additional network interfaces on the nested VM to configure in-guest iSCSI 
+You will need to have 2 additional network interfaces on the nested VM to configure in-guest iSCSI. They need to be on your iSCSI Network on ESXi.  
 
 On VMware side go to the VM, right-click and go to Edit Settings:
 
 
 
-![alt_text](../assets/images/nested-proxmox/image16.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image16.png "image_tooltip")
 
 
 
-![alt_text](../assets/images/nested-proxmox/image6.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image6.png "image_tooltip")
 
 
 On the Proxmox VE server:
@@ -98,7 +103,7 @@ ip link show
 
 
 
-![alt_text](../assets/images/nested-proxmox/image7.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image7.png "image_tooltip")
 
 
 
@@ -115,7 +120,7 @@ Configure the bridge with your desired IP settings
 Apply the configuration
 
 
-![alt_text](../assets/images/nested-proxmox/image24.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image24.png "image_tooltip")
 
 
 Check that it is configured correctly:
@@ -123,7 +128,7 @@ Check that it is configured correctly:
 
 
 
-![alt_text](../assets/images/nested-proxmox/image19.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image19.png "image_tooltip")
 
 
 Remember to hit the “Apply Configuration” button before proceeding.
@@ -143,7 +148,7 @@ Add mtu 9000 to each interface:
 
 
 
-![alt_text](../assets/images/nested-proxmox/image9.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image9.png "image_tooltip")
 
 
 **Apply changes:**
@@ -158,10 +163,10 @@ systemctl restart networking
 
 
 
-![alt_text](../assets/images/nested-proxmox/image2.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image2.png "image_tooltip")
 
 
-**Install and Configure iSCSI Initiator** 
+### Install and Configure iSCSI Initiator 
 
 **Install required packages:**
 
@@ -214,7 +219,7 @@ cat /etc/iscsi/initiatorname.iscsi
 
 
 
-![alt_text](../assets/images/nested-proxmox/image25.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image25.png "image_tooltip")
 
 
 
@@ -275,7 +280,7 @@ Expected output:
 
 
 
-![alt_text](../assets/images/nested-proxmox/image23.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image23.png "image_tooltip")
 
 
 
@@ -296,7 +301,7 @@ Use this IQN to create host objects in the Pure Storage Purity management interf
 
 
 
-![alt_text](../assets/images/nested-proxmox/image1.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image1.png "image_tooltip")
 
 
 Create a new volume and connect it to the Proxmox host you just created
@@ -311,25 +316,25 @@ Create a volume/LUN for your host:
 
 
 
-![alt_text](../assets/images/nested-proxmox/image17.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image17.png "image_tooltip")
 
 
 
 
-![alt_text](../assets/images/nested-proxmox/image5.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image5.png "image_tooltip")
 
 
 
-### **Connect to Pure Storage Target**
+### Connect to Pure Storage Target
 
 
-#### **Discover targets:**
+ **Discover targets:**
 
 On Pure Storage find what are your iSCSI target IP Addresses:
 
 
 
-![alt_text](../assets/images/nested-proxmox/image4.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image4.png "image_tooltip")
 
 
 There  is a known limitation with open-iscsi. You can't bind both hwaddress and net_ifacename on the same interface. You need to choose one binding method. I chose the net_ifacename:
@@ -383,7 +388,7 @@ You should see something similar to this output.
 
 
 
-![alt_text](../assets/images/nested-proxmox/image26.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image26.png "image_tooltip")
 
 
 **Verify connections:**
@@ -399,7 +404,7 @@ Part of the expected output:
 
 
 
-![alt_text](../assets/images/nested-proxmox/image11.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image11.png "image_tooltip")
 
 
 **Check multipath status:**
@@ -414,7 +419,7 @@ You should see something like:
 
 
 
-![alt_text](../assets/images/nested-proxmox/image18.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image18.png "image_tooltip")
 
 
 **Verify SCSI Devices**
@@ -465,7 +470,7 @@ iscsiadm -m node --loginall=automatic
 
 
 
-![alt_text](../assets/images/nested-proxmox/image10.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image10.png "image_tooltip")
 
 
 **In Proxmox Shell:**
@@ -476,14 +481,14 @@ iscsiadm -m node --loginall=automatic
 ```
 
 
-![alt_text](../assets/images/nested-proxmox/image22.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image22.png "image_tooltip")
 
 
 **Compare to Pure Storage GUI:**
 
 
 
-![alt_text](../assets/images/nested-proxmox/image28.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image28.png "image_tooltip")
 
 
 
@@ -498,7 +503,7 @@ ping -M do -s 8972 172.16.50.44
 
 
 
-![alt_text](../assets/images/nested-proxmox/image13.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image13.png "image_tooltip")
 
 
 **Basic I/O test:**
@@ -524,11 +529,11 @@ On Pure Storage FlashArray GUI dashboard you should see the spike corresponding 
 
 
 
-![alt_text](../assets/images/nested-proxmox/image21.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image21.png "image_tooltip")
 
 
 
-### Nest Steps
+### **Nest Steps**
 
 Pick one based on your goals:
 
@@ -664,7 +669,7 @@ Now visible under Datacenter → Storage → pure-iscsi-lun in the Proxmox UI.
 
 
 
-![alt_text](../assets/images/nested-proxmox/image8.png "image_tooltip")
+![Screenshot](/assets/images/nested-proxmox/image8.png "image_tooltip")
 
 
 Congratulations! You are done!
