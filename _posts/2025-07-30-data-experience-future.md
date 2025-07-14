@@ -19,7 +19,7 @@ So let’s retire the word “storage” and start talking about what’s really
 
 ---
 
-## 🚀 The 5-Year Outlook (2025–2030): From Systems to Self-Awareness
+## The 5-Year Outlook (2025–2030): From Systems to Self-Awareness
 
 In the short term, data infrastructure is getting smarter — and so are the expectations:
 
@@ -33,7 +33,7 @@ In the short term, data infrastructure is getting smarter — and so are the exp
 
 ---
 
-## 🤖 The 10-Year Outlook (2030–2035): Intelligence at the Infrastructure Layer
+## The 10-Year Outlook (2030–2035): Intelligence at the Infrastructure Layer
 
 By 2035, your data layer won’t just store bits. It’ll **understand them**.
 
@@ -47,7 +47,7 @@ By 2035, your data layer won’t just store bits. It’ll **understand them**.
 
 ---
 
-## 🧬 The 15-Year Outlook (2035–2040): When Your Data Grows a Brain
+## The 15-Year Outlook (2035–2040): When Your Data Grows a Brain
 
 Welcome to the weird (and wildly exciting) future:
 
@@ -61,14 +61,14 @@ Welcome to the weird (and wildly exciting) future:
 
 ---
 
-## 🔑 So, What Now?
+## So, What Now?
 
 Start preparing now:
 
-✅ Think modular, API-driven, and AI-ready  
-✅ Invest in platforms that evolve with your business — not against it  
-✅ Stop thinking about where your data *lives* and start thinking about how it *moves and acts*  
-✅ And yes — look at who’s already building for this future (hint: Pure Storage)
+- Think modular, API-driven, and AI-ready  
+- Invest in platforms that evolve with your business — not against it  
+- Stop thinking about where your data *lives* and start thinking about how it *moves and acts*  
+- And yes — look at who’s already building for this future (hint: Pure Storage)
 
 ---
 
