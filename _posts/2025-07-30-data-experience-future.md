@@ -15,7 +15,7 @@ For decades, we treated data like a hoarder treats old newspapers. Stack it. Lab
 So let’s retire the word “storage” and start talking about what’s really happening:  
 **The Data Experience Revolution.**
 
-![Illustration of legacy vs. modern data experience](assets/images/future-of-data/legacy_vs_modern.jpg)
+![Illustration of legacy vs. modern data experience](/assets/images/future-of-data/legacy_vs_modern.jpg)
 
 ---
 
