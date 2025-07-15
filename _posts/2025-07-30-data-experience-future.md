@@ -15,7 +15,7 @@ For decades, we treated data like a hoarder treats old newspapers. Stack it. Lab
 So let’s retire the word “storage” and start talking about what’s really happening:  
 **The Data Experience Revolution.**
 
-<img src="/assets/images/future-of-data/legacy_vs_modern.jpg" alt="Illustration of legacy vs. modern data experience" width="700">
+<img src="/assets/images/future-of-data/legacy_vs_modern.jpg" alt="Illustration of legacy vs. modern data experience" width="450">
 
 ---
 
@@ -29,7 +29,7 @@ In the short term, data infrastructure is getting smarter — and so are the exp
 - **All-flash everywhere.** It’s not about storing more, it’s about storing *faster and greener*.
 - **Cyber resilience** becomes table stakes. If your data platform doesn’t support immutability, rapid recovery, and ransomware defenses by default, it’s not future-ready.
 
-![AI workloads and autonomous data management](/assets/images/future-of-data/AI_workloads.jpg)
+<img src="/assets/images/future-of-data/AI_workloads.jpg" alt="AI workloads and autonomous data management" width="450">
 
 ---
 
@@ -43,7 +43,7 @@ By 2035, your data layer won’t just store bits. It’ll **understand them**.
 - Sustainability will be a buying criterion — yes, carbon emissions per petabyte will matter.
 - And you’ll move your data across clouds like dragging files between folders — thanks to **universal portability** and open formats.
 
-![Federated access and global data mesh](/assets/images/future-of-data/global-data-mesh.jpg)
+<img src="/assets/images/future-of-data/global-data-mesh.jpg" alt="Federated access and global data mesh" width="450">
 
 ---
 
@@ -57,8 +57,7 @@ Welcome to the weird (and wildly exciting) future:
 - Compliance and ethics will be enforced by real-time **digital sovereignty engines**.
 - And yes, we may one day store archives in **bio-integrated molecular drives**. Think DNA-as-a-service.
 
-![Future of data: molecular storage](/assets/images/future-of-data/bio-integrated-storage.jpg)
-
+<img src="/assets/images/future-of-data/bio-integrated-storage.jpg" alt="Future of data: molecular storage" width="450">
 ---
 
 ## So, What Now?
