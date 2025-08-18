@@ -55,7 +55,7 @@ For too long, storage has been a "dumb" container. It knew a file existed, but h
 
 ### The Convergence of Compute and Storage
 
-Data has gravity. As datasets swell into the petabytes and exabytes, moving them to a separate compute cluster for processing becomes slow, costly, and a security risk. The logical solution is to flip the model: **move the compute to the data**. In this next decade, storage arrays will become high-performance data processing hubs. They will integrate accelerators like GPUs, DPUs, and FPGAs directly into the chassis. This will allow organizations to perform real-time analytics, AI/ML model training, and complex data transformations directly where the data lives, slashing latency and unlocking new possibilities for discovery.
+Data has gravity. As datasets swell into the petabytes and exabytes, moving them to a separate compute cluster for processing becomes slow, costly, and a security risk. The logical solution is to flip the model: **move the compute to the data**. In this next decade, storage arrays will become high-performance data processing hubs. They will integrate accelerators like GPUs, DPUs, TPUs and FPGAs directly into the chassis. This will allow organizations to perform real-time analytics, AI/ML model training, and complex data transformations directly where the data lives, slashing latency and unlocking new possibilities for discovery.
 
 ### Realizing the Dream of Universal Data Portability
 
@@ -68,7 +68,7 @@ The hybrid cloud is the reality for nearly every enterprise, but true workload p
 
 ## The 15+ Year Horizon (2035-2040): The Sentient Data Center
 
-Now, we look further out, to the edge of what's currently imaginable. If the last stage was about an intelligent system, this final stage is about a sentient one. Here, the infrastructure transcends its role as a tool and becomes a true partner, evolving and even creating in ways we are just beginning to comprehend.
+Now, we look further out, to the edge of what's currently imaginable. If the last stage was about an intelligent system, this final stage is about a sentient one. Here, the infrastructure transcends its role as a tool and becomes a true partner, evolving and even creating in ways we are just beginning to comprehend. I really wanted to use an image from the "Matrix" movie, but didn't want to infringe on any copywrights here. Just imagine the "digital twins", i.e. Mr. Smith...
 
 ### Self-Evolving Architectures: The System That Improves Itself
 
