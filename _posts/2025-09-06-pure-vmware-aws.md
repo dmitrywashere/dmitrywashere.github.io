@@ -53,7 +53,7 @@ The flexibility of Cloud Block Store also contributes to cost efficiency. It dep
 
 For more information, see the official blog post: 
 
-[Pure Storage Cloud Service for Amazon Elastic VMware Service | Pure Storage Blog](https://blog.purestorage.com/products/pure-storage-cloud-service-for-amazon-elastic-vmware-service/)
+[Pure Storage Cloud Service for Amazon Elastic VMware Service &#124; Pure Storage Blog](https://blog.purestorage.com/products/pure-storage-cloud-service-for-amazon-elastic-vmware-service/)
 
 This creates a seamless storage experience with powerful benefits:
 * **Consistent Enterprise Features:** You get all the features you rely on in the data center—industry-leading data reduction, thin provisioning, SafeMode for ransomware protection, and asynchronous replication—extended directly into your AWS environment.
