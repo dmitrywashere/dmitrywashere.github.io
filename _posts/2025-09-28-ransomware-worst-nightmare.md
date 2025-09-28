@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Ransomware’s Worst Nightmare: A SLED Leader’s Guide to Pure Storage’s New Cyber Resilience Arsenal"
+date: 2025-09-28
+categories: [cyber, security, data, purestorage, superna, veeam, accelerate2025]
+published: true
+---
+
 # Ransomware’s Worst Nightmare: A SLED Leader’s Guide to Pure Storage’s New Cyber Resilience Arsenal
 
 It seems you can’t go a week without another headline that makes your stomach drop.
