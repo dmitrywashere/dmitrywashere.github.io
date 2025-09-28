@@ -11,7 +11,7 @@ published: true
 It seems you can’t go a week without another headline that makes your stomach drop.
 This isn’t just a string of bad luck; it’s a terrifying trend. A recent report showed a **65% surge** in ransomware attacks against government agencies this year alone.
 
-<img src="/assets/images/ransomware/encrypted_files.png.png" alt="Cyber Criminals" width="650">
+<img src="/assets/images/ransomware/encrypted_files.png" alt="Cyber Criminals" width="650">
 ---
 
 | State | Victim / Sector | When (2025) | What Broke (Impact) | Current Status (as reported) |
@@ -43,11 +43,11 @@ Those days are over.
 
 At Accelerate NYC, Pure Storage announced a fundamental shift: your storage is now an active, intelligent part of your security team [NYC Pure Storage Accelerate September 2025](https://www.purestorage.com/pure-launch-updates-releases.html?).
 
-* **The CrowdStrike Integration:** Think of this as giving your data storage a direct, red-phone hotline to your Security Operations Center (SOC). When CrowdStrike’s industry-leading platform detects a threat, your storage array knows about it instantly. It can be automatically instructed to take defensive measures, like immediately securing your most critical data snapshots before the attacker can even get close to them. It's no longer just a victim; it's a first responder.
+* **The CrowdStrike Integration:** Think of this as giving your data storage a direct, red-phone hotline to your Security Operations Center (SOC). When CrowdStrike’s industry-leading platform detects a threat, your storage array knows about it instantly. It can be automatically instructed to take defensive measures, like immediately securing your most critical data snapshots before the attacker can even get close to them. It's no longer just a victim; it's a first responder. [Crowdstrike and Pure](https://www.purestorage.com/partners/technology-alliance-partners/crowdstrike.html)
 
 * **The Superna Integration:** This is like having a digital security guard watching every single file, 24/7. Superna’s technology monitors for unusual and malicious user behavior. Is a service account that normally just reads files suddenly trying to encrypt or delete thousands of them? *Busted*. The integration can instantly lock that compromised account down, stopping a ransomware attack dead in its tracks.
 
-For understaffed SLED IT teams, this is a game-changer. It’s automated protection that doesn’t require another person staring at another screen. It’s the difference between finding out about an attack on Monday morning and stopping it at 2 a.m. on Saturday.
+For understaffed SLED IT teams, this is a game-changer. It’s automated protection that doesn’t require another person staring at another screen. It’s the difference between finding out about an attack on Monday morning and stopping it at 2 a.m. on Saturday. [Superna and Pure](https://www.purestorage.com/company/newsroom/press-releases/pure-storage-expands-cyber-resilience-through-new-innovations.html)
 
 ---
 
@@ -59,7 +59,7 @@ Of course not. Because doing so on your live systems would be like holding a fir
 
 So, you cross your fingers and hope it works. If your recovery plan is based on hope, congratulations—the ransomware gang just found their next customer.
 
-This is where the new Pure Protect Recovery Zones come in. Think of it as a full-fidelity, cyber “fire drill” simulator for your entire data center. With a few clicks, you can instantly spin up a clean, completely isolated copy of your production environment.
+This is where the new Pure Protect Recovery Zones come in [Pure Protect Recovery Zones](https://www.purestorage.com/products/software-and-stack/disaster-recovery-as-a-service-pure-protect.html). Think of it as a full-fidelity, cyber “fire drill” simulator for your entire data center. With a few clicks, you can instantly spin up a clean, completely isolated copy of your production environment.
 
 In this secure sandbox, you can:
 * Test your recovery procedures without any risk to live public services.
@@ -74,7 +74,7 @@ This isn’t a theoretical plan anymore. It’s a practiced, proven capability. 
 
 The moments after an attack are pure chaos. You’ve got too many tools, too many cooks in the kitchen, and everyone is running around with their hair on fire. The recovery process is often a messy, manual scramble that takes days, if not weeks.
 
-To fix this, we announced a groundbreaking new offering: Cyber Resilience as a Service with Veeam.
+To fix this, we announced a groundbreaking new offering: Cyber Resilience as a Service with Veeam [Cyber Resilience as a Service with Veeam](https://blog.purestorage.com/solutions/pure-storage-veeam-cyber-resilience-as-a-service/).
 
 Instead of juggling flaming chainsaws blindfolded during a crisis, this gives your team a unified command center with big, clearly labeled buttons. It turns a complex, multi-day manual process into a guided, policy-driven workflow designed to get you back online fast. It’s about orchestrating a clean, reliable recovery you can trust.
 
