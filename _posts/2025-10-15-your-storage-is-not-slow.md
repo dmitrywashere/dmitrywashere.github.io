@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Your Storage Isn't Slow. Your Application Has a Secret Drinking Problem."
+title: "Your Storage Isn't Slow - Your Application Has a Secret Drinking Problem"
 date: 2025-10-15
-categories: [DB, database, performance, troubleshooting, cyberresiliency, technology, SAP, clones, testdev]
+categories: [DB, database, performance, troubleshooting, SAP, clones, testdev]
 published: true
 
 ---
