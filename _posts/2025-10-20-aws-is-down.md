@@ -11,7 +11,9 @@ published: true
 **A Message to Every Vendor Right Now: Please, Stop the Ambulance Chasing.**
 
 This morning, as I was heading out to the airport, the news hit: a major global service had a bit of a moment. A real “sit-in-the-lounge-looking-at-your-phone-while-your-systems-are-frozen” type of moment.
+
 <img src="/assets/images/cloudisdown/awsoutage.png" alt="AWS is Down" width="650">
+
 And to the infrastructure vendors who immediately dusted off their "Disaster Recovery" slide decks and started cold-calling, I have one request: **Take a breath.**
 
 Everybody trips. Every system, every platform, and every piece of architecture—no matter how hyper-scale or distributed—will, eventually, have a bad day. The vendors who rush to point fingers at a momentary failure are missing the bigger picture: If the undisputed champions of the cloud can slip up, then consolidation on *any* single path is, quite frankly, just asking for trouble.
