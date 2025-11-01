@@ -33,7 +33,7 @@ When you start with specs, you’re talking *at* them. When you start with empat
 
 ## Selling Is Easy. Solving Is Hard.
 
-Anyone can sell. All it takes is a discount and a Power**P**oint slide deck.
+Anyone can sell. All it takes is a discount and a Power Point slide deck.
 
 But solving? That takes **curiosity**. That takes shutting up long enough to really listen.
 
@@ -49,13 +49,13 @@ If you can make their pain feel smaller, they’ll trust you forever.
 
 Let me put this in a different context. **Think about dating.**
 
-Imagine you're trying to meet someone, and on the first date, you launch into a relentless monologue about your accomplishments. *“I'm really successful. I've got a beautiful house, you should come by sometime. I’m good-looking, which is great because I go on TV all the time, and I know a lot of famous people.”*
-
 Now, I’m going to borrow an idea from **Simon Sinek** here, because it’s a brilliant way to see this problem. If someone talked like that on a date, we’d all agree that person is **appalling**. They're self-obsessed, and there is no chance of a second date.
+
+Imagine you're trying to meet someone, and on the first date, you launch into a relentless monologue about your accomplishments. *“I'm really successful. I've got a beautiful house, you should come by sometime. I’m good-looking, which is great because I go on TV all the time, and I know a lot of famous people.”*
 
 <img src="/assets/images/solve-pain/simon_sinek.jpg" alt="Simon" width="650">
 
-But then, we go and do the *exact same thing* on a sales call: *“We’re the largest company in the market. We are in the top-right corner of **the** Gartner Magic Quadrant. We have made billions in revenue last fiscal year.”*
+But then, we go and do the *exact same thing* on a sales call: *“We’re the largest company in the market. We are in the top-right corner of the Gartner Magic Quadrant. We have made billions in revenue last fiscal year.”*
 
 If that approach is a catastrophe in a bar, why do we think it’s a good strategy in a boardroom?
 
