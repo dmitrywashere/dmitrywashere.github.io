@@ -8,3 +8,15 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 google_analytics: G-TYQGG5FMB5
+giscus:
+  repo: dmitrywashere/dmitrywashere.github.io
+  repo_id: R_kgDOPK-x5g
+  category: General
+  category_id: DIC_kwDOPK-x5s4CubDH
+  mapping: pathname
+  strict: 0
+  reactions_enabled: 1
+  emit_metadata: 0
+  input_position: bottom
+  theme: preferred_color_scheme
+  lang: en
