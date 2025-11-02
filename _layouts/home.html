@@ -25,19 +25,14 @@
       <div style="max-width: 700px; margin: auto; padding: 2rem;">
         {{ content }}
 
-        <hr style="margin: 2rem 0;">
-
+        <hr>
         <h2>Latest Posts</h2>
-        <ul style="list-style: none; padding-left: 0;">
+        <ul>
           {% for post in site.posts %}
-            <li style="margin-bottom: 1.5rem;">
-              <a href="{{ post.url | relative_url }}" style="font-size: 1.1rem; font-weight: bold;">
-                {{ post.title }}
-              </a>
-              <div style="font-size: 0.9rem; color: #666;">
-                {{ post.date | date: "%B %d, %Y" }}
-              </div>
-              <p style="margin-top: 0.3rem;">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+            <li>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <small>— {{ post.date | date: "%b %-d, %Y" }}</small>
+              <a href="{{ post.url | relative_url }}#giscus_thread" style="margin-left: 10px; font-size: 0.9em;">💬 Comments</a>
             </li>
           {% endfor %}
         </ul>
@@ -47,7 +42,5 @@
     <footer>
       {% include footer.html %}
     </footer>
-
-    {% include comments.html %}
   </body>
 </html>
