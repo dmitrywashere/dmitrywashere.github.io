@@ -10,7 +10,7 @@ published: true
 
 I know, I know. Another post about non-disruptive upgrades. Trust me, I was ready to skip this topic until I realized I had to actually do one three days ago. Let's ditch the marketing slides and look at what this looks like when a human (me) is holding the cables.
 
-<img src="../assets/images/ndu/0peace.jpeg" alt="Peace" width="650">
+<img src="/assets/images/ndu/0peace.jpeg" alt="Peace" width="650">
 
 Let’s be honest. Planning a storage refresh is the worst. It’s a project that starts with technical debt and ends with budget pain. It means months of planning, coordinating large-scale downtime windows, managing complex data migrations that often introduce risk, retraining staff on a fundamentally new platform, and that sinking feeling when you look at the surprise renewal invoice years down the line.
 
@@ -79,11 +79,11 @@ Replace the Power Supplies (Optional)
 
 Here is the GUI image of the array I am upgrading after I pulled the old power supply out.
 
-<img src="../assets/images/ndu/1Before.png" alt="Before" width="650">
+<img src="/assets/images/ndu/1Before.png" alt="Before" width="650">
 
 Here is what it looks like from the back:
 
-<img src="../assets/images/ndu/2ReplacePowerSupply.png" alt="Power Supply" width="650">
+<img src="/assets/images/ndu/2ReplacePowerSupply.png" alt="Power Supply" width="650">
 
 
 ### Phase 3: Controller 1 (CT1) Swap (Full Upgrade)
@@ -99,31 +99,31 @@ With the new CT0 now stabilized and serving I/O, we repeat the procedure to repl
 | **11.**| **Install New CT1.** | Install new **FlashArray//XR4 CT1**. Move remaining supported PCIe cards. |
 | **12.**| **Initialize & Recable.** | Run `puresetup replace` twice on the new CT1 console. Reconnect all remaining cables. |
 
-<img src="../assets/images/ndu/3CT0removed.png" alt="CT0 removed" width="650">
+<img src="/assets/images/ndu/3CT0removed.png" alt="CT0 removed" width="650">
 
 CT0 was removed and the end user traffic is flowing uniterrupted. It's like magic. 
 
 You can see the difference in controller HW between CT0 and CT1 - this is a cross genegational upgrade, remember?
 
-<img src="../assets/images/ndu/4NewXR4CTO.png" alt="New CT0" width="650">
+<img src="/assets/images/ndu/4NewXR4CTO.png" alt="New CT0" width="650">
 
 Here is the CLI output:
 
-<img src="../assets/images/ndu/5CLICheck.png" alt="CLI" width="650">
+<img src="/assets/images/ndu/5CLICheck.png" alt="CLI" width="650">
 
 Still no traffic interruption:
 
-<img src="../assets/images/ndu/7NoTrafficInterruption.png" alt="NDU" width="650">
+<img src="/assets/images/ndu/7NoTrafficInterruption.png" alt="NDU" width="650">
 
 ### Phase 4: Finalization
 
 All that is left to do is to do the last validation and update the time zone.
 
-<img src="../assets/images/ndu/9FinalStep.png" alt="Time Zone" width="650">
+<img src="/assets/images/ndu/9FinalStep.png" alt="Time Zone" width="650">
 
 The array is now fully on the new **FlashArray//XR4** controllers!
 
-<img src="../assets/images/ndu/8NDUDone.png" alt="Power Supply" width="650">
+<img src="/assets/images/ndu/8NDUDone.png" alt="Power Supply" width="650">
 
 * **Restore I/O Balance:** Remove the preference setting to allow full active/active I/O to both controllers: `puredb prefer ""`.
 * **Final Verification:** Run final health checks, verify status, and test failover to confirm full redundancy.
