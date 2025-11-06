@@ -1,12 +1,16 @@
 ---
 layout: post
-title: "Evergreen - Killing the Storage Refresh Cycle Forever"
+title: "The Storage Refresh is Dead (And Your Downtime Just Got the Memo)"
 date: 2025-11-06
-categories: [se, purestorage, flasharray, evergreen, ndu, homelab]
+categories: [se, purestorage, flasharray, evergreen, ndu, homelab, innovation]
 published: true 
 ---
 
-# 💡 Evergreen: Killing the Storage Refresh Cycle — Forever
+# 💡 Evergreen: The Storage Refresh is Dead (And Your Downtime Just Got the Memo)
+
+I know, I know. Another post about non-disruptive upgrades. Trust me, I was ready to skip this topic until I realized I had to actually do one three days ago. Let's ditch the marketing slides and look at what this looks like when a human (me) is holding the cables.
+
+<img src="../assets/images/ndu/0peace.jpeg" alt="Peace" width="650">
 
 Let’s be honest. Planning a storage refresh is the worst. It’s a project that starts with technical debt and ends with budget pain. It means months of planning, coordinating large-scale downtime windows, managing complex data migrations that often introduce risk, retraining staff on a fundamentally new platform, and that sinking feeling when you look at the surprise renewal invoice years down the line.
 
@@ -99,7 +103,7 @@ With the new CT0 now stabilized and serving I/O, we repeat the procedure to repl
 
 CT0 was removed and the end user traffic is flowing uniterrupted. It's like magic. 
 
-You can see the difference in controller HW between CT0 and CT1 - this is a cross genegations upgrade, remember?
+You can see the difference in controller HW between CT0 and CT1 - this is a cross genegational upgrade, remember?
 
 <img src="../assets/images/ndu/4NewXR4CTO.png" alt="New CT0" width="650">
 
