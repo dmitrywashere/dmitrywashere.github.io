@@ -6,8 +6,6 @@ categories: [se, purestorage, flasharray, evergreen, ndu, homelab, innovation]
 published: true 
 ---
 
-# 💡 Evergreen: The Storage Refresh is Dead (And Your Downtime Just Got the Memo)
-
 I know, I know. Another post about non-disruptive upgrades. Trust me, I was ready to skip this topic until I realized I had to actually do one three days ago. Let's ditch the marketing slides and look at what this looks like when a human (me) is holding the cables.
 
 <img src="/assets/images/ndu/0peace.jpeg" alt="Peace" width="650">
