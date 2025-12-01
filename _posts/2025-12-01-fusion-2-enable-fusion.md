@@ -3,7 +3,7 @@ layout: post
 title: "From Pet Arrays to a Storage Fleet: Pure Fusion in the Basement Rack — Part 2"
 date: 2025-12-01
 categories: [homelab, fusion, purestorage, activedirectory, ldap]
-published: true 
+published: true
 ---
 
 # From Pet Arrays to a Storage Fleet: My Journey into Pure Fusion  
@@ -384,7 +384,7 @@ Everything came back green.
 
 <img src="/assets/images/fusion2/arrayjoined.png" alt="Array joined" width="650">
 
-Nest step is to create a unique Fleet Key.
+Next step is to create a unique Fleet Key.
 
 <img src="/assets/images/fusion2/fleetkey.png" alt="Fleet key" width="650">
 
@@ -470,5 +470,5 @@ Now my basement rack doesn’t just look like a pile of gear — it behaves like
 And I can finally say: I don’t just talk about the cloud operating model all day…  
 I’m actually running it at home.
 
-Now this was fun! Thank you for readin, feel free to comment below.
+Now this was fun! Thank you for reading, feel free to comment below.
 

@@ -3,7 +3,7 @@ layout: post
 title: "Building an Enterprise Data Cloud at Home with Pure Storage Fusion — Part 1"
 date: 2025-12-01
 categories: [homelab, fusion, purestorage, activedirectory, windowsserver, DNS]
-published: true 
+published: true
 ---
 
 # Building an Enterprise Data Cloud at Home with Pure Storage Fusion — Part 1  
@@ -17,7 +17,7 @@ Before I can let Fusion manage storage as a unified, policy-driven cloud of data
 
 This first post focuses entirely on that groundwork: planning and executing the domain controller upgrade, validating AD health, and getting the lab ready for a more “enterprise-like” experience at home. It’s the unglamorous, necessary prep work that makes the next step possible.
 
-In the second post (time permitting), I’ll finally bring it all together: joining the Pure arrays to the upgraded AD domain, enabling Fusion, and showing how an intelligent control plane can turn a handful of independent systems into something that looks and feels much closer to an Enterprise Data Cloud—even when it’s all running in a basement halfrack.
+In the second post (time permitting), I’ll finally bring it all together: joining the Pure arrays to the upgraded AD domain, enabling Fusion, and showing how an intelligent control plane can turn a handful of independent systems into something that looks and feels much closer to an Enterprise Data Cloud—even when it’s all running in a basement half-rack.
 
 <img src="/assets/images/fusion/homelab.png" alt="Home Lab" width="650">
 
@@ -251,9 +251,9 @@ And that’s where things got… interesting.
 Almost immediately after the IP changes, **the entire house came to a screeching halt**.
 
 - Web pages crawled or failed outright.  
-- Speedtests looked like they were being routed through a potato.  
-- My wife's Cyber Monday shopping stopped spending money.  
-- Fantasy Football trades didn't go through and the team remained unchanged for a while. 
+- Speed tests looked like they were being routed through a potato.  
+- Internet slowed down so much, my wife’s Cyber Monday shopping actually paused. Honestly the fastest way to save money.  
+- Fantasy Football trades didn't go through and the team remained unchanged for a while. I lost the matchup by less than 5 points (!!)
 
 ### 7.1 Troubleshooting Phase 1: Overthinking It
 
@@ -284,7 +284,7 @@ On the new DC (`DC1NEW`, now at `192.168.1.2`), I found:
 
 So every time something on the network tried to resolve any external website, the new DC dutifully checked its local zones, found nothing, and then… didn’t know where else to go.
 
-Local name resolution? Fine. External DNS? Faceplant.
+Local name resolution? Fine. External DNS? Facepalm.
 
 ---
 
@@ -337,9 +337,9 @@ ipconfig /registerdns
 Almost immediately, everything snapped back into place.
 
 - Web browsing was fast again.  
-- Speedtests looked like a gigabit connection should.  
+- Speed tests looked like a gigabit connection should.  
 - Smart devices reconnected.  
-- The wife stopped glaring at me.
+- My wife stopped glaring at me.
 
 ---
 
