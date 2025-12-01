@@ -6,7 +6,6 @@ categories: [homelab, fusion, purestorage, activedirectory, windowsserver, DNS]
 published: true
 ---
 
-# Building an Enterprise Data Cloud at Home with Pure Storage Fusion — Part 1  
 ### Upgrading the Domain Controller: Or, “Why Is My Internet Suddenly Moving Like a Bag of Wet Cement?”
 
 If you spend your days talking about Enterprise Data Cloud and “intelligent control planes,” it’s only a matter of time before you start wondering: what would this actually look like in my own lab? Not a glossy demo environment, but a slightly messy, very real setup with old domain controllers, forgotten service accounts, and projects that started strong and then… got preempted by life.

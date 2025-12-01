@@ -6,8 +6,7 @@ categories: [homelab, fusion, purestorage, activedirectory, ldap]
 published: true
 ---
 
-# From Pet Arrays to a Storage Fleet: My Journey into Pure Fusion  
-### Or: How I Thought Fusion Would Be Hard, But It Was Really Just Active Directory (Again)
+### Enabling Fusion: Or: How I Thought Fusion Would Be Hard, But It Was Really Just Active Directory (Again)
 
 After finishing Part 1, I walked away feeling pretty good. I had:
 
