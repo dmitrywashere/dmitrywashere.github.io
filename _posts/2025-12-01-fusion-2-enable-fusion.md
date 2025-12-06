@@ -39,16 +39,15 @@ The Enterprise Data Cloud flips that model. The goal now is:
 This is the promise of **Pure Storage Fusion**.
 
 Fusion isn’t a management interface; it’s a **SaaS control plane** that brings the cloud operating model to on-premises hardware. It abstracts physical storage arrays into:
-
-- **Availability Zones**  
+  
 - **Storage Classes**  
-- **Presets**, **Workloads** and **Servers**
+- **Presets**
+- **Workloads** and **Servers**
 
 For the customer, the value is clear:
 
 - **Infinite Scale (conceptually):** Merge fleets of arrays into what feels like endless capacity.  
 - **Self-Service:** Developers consume storage via API without waiting for “that one storage person” to get to a ticket.  
-- **Intelligent Placement:** Fusion’s engine places and rebalances workloads automatically based on policy and performance needs.
 
 Intellectually, I understood all of this. But as a technologist, I don’t truly *know* a product until I’ve wired it into my own lab and broken it a few times.
 
