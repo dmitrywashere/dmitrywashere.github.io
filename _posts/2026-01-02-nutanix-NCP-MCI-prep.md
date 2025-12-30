@@ -457,32 +457,7 @@ Mostly on purpose. Well, not really - I was just a blind kitten bumping into wal
 
 ## The One Diagram That Made Everything Click
 
-```md
-```text
-┌─────────────────────────────────────────────────────────┐
-│ ESXi                                                    │
-│ (Your existing hypervisor / home lab)                   │
-│                                                         │
-│  ┌───────────────────────────────────────────────────┐ │
-│  │ AHV Host (Nutanix CE VM)                            │ │
-│  │                                                     │ │
-│  │  - Just a hypervisor                                │ │
-│  │  - Sees physical / virtual disks                    │ │
-│  │  - Runs VMs (including the CVM)                     │ │
-│  │                                                     │ │
-│  │   ┌─────────────────────────────────────────────┐ │ │
-│  │   │ CVM (Controller VM)                           │ │ │
-│  │   │                                              │ │ │
-│  │   │  - Storage services (AOS)                     │ │ │
-│  │   │  - Metadata & leadership (Zeus)               │ │ │
-│  │   │  - I/O path (Stargate)                         │ │ │
-│  │   │  - Cluster brain                               │ │ │
-│  │   │                                              │ │ │
-│  │   │  cluster create happens HERE                  │ │ │
-│  │   └─────────────────────────────────────────────┘ │ │
-│  └───────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────┘
-
+<img src="/assets/images/Nutanix/diagram.jpg" alt="diagram" width="650">
 
 If you remember **nothing else**, remember this:
 
