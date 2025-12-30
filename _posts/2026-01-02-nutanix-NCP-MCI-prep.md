@@ -1,16 +1,17 @@
 ---
 layout: post
 title: "Understanding Nutanix by Breaking It (Safely): AHV vs CVM vs ESXi — and Why This Finally Clicked for Me"
-date: 2026-01-02
+date: 2025-12-30
 categories: [homelab, nutanix, AHV, CVM, HCI, NCP-MCI]
 published: true
 ---
 
-This blog is unapologetically long — and that’s intentional. 
+This last blog post of 2025 is unapologetically long — and that’s intentional. My goal is to help SEs who are studying for NCP-MCI exam. I haven't taken it yet myself, but one can hope.
 
 ---
 
 I started writing it after the recent **Nutanix and Pure Storage integration announcements** ([Nutanix + Pure Storage overview](https://www.nutanix.com/purestorage) and the [joint solution brief](https://www.purestorage.com/content/dam/pdf/en/solution-briefs/sb-pure-storage-nutanix.pdf)), because it made me pause and ask a simple but uncomfortable question: *how can we meaningfully talk about a joint solution to customers and prospects if we don’t actually understand the underlying architecture of one (or both) platforms?* 
+Feel free to comment below.
 
 ---
 
@@ -168,7 +169,7 @@ A **block** is a vendor packaging term:
 
 In a typical Nutanix cluster, a block is a chassis that holds from one to four nodes, and contains power, cooling, and the backplane for the nodes (Think Blade Center). The number of nodes and drives depends on the hardware chosen for the solution.
 
-The exam cares about **nodes**, not blocks.
+> The exam cares about **nodes**, not blocks.
 
 ---
 
@@ -185,7 +186,7 @@ It is:
 - To present a single storage pool and control plane
 - With defined failure domains
 
-No cluster → no Nutanix magic.
+> No cluster → no Nutanix magic.
 
 ---
 
@@ -372,9 +373,7 @@ If you understand that, the terminology stops being scary — and the NCP-MCI qu
 
 # Appendix: Explaining *That* Diagram Without Losing Your Sanity
 
-At some point in Nutanix training, you are shown *the diagram*.
-
-You know the one.
+At some point in Nutanix training, you are shown *the diagram*. You know, the one from the top of this post
 
 Twenty-plus boxes.  
 Rainbow arrows.  
@@ -382,8 +381,6 @@ Mythical names.
 Exactly zero guidance.
 
 This section exists so that diagram never intimidates you again.
-
-— #dmitrywashere
 
 ---
 
@@ -397,7 +394,7 @@ It’s **four planes**, drawn all at once:
 3. **Data Plane**
 4. **Background & Optimization**
 
-Once you sort services into those buckets, the chaos drops by ~70%.
+Once you sort services into those buckets, the chaos drops by ~70%. You gotta love statistics - show a big percent number and a reader gets a shot of dopamine.  
 
 ---
 
@@ -408,7 +405,7 @@ Once you sort services into those buckets, the chaos drops by ~70%.
 - Leadership
 - Cluster membership
 
-If something involves *who’s in charge* → think **Zeus**.
+> If something involves *who’s in charge* → think **Zeus**.
 
 ---
 
@@ -417,7 +414,7 @@ If something involves *who’s in charge* → think **Zeus**.
 - Replication
 - Performance
 
-If something involves *VM I/O* → think **Stargate**.
+> If something involves *VM I/O* → think **Stargate**.
 
 ---
 
@@ -426,7 +423,7 @@ If something involves *VM I/O* → think **Stargate**.
 - Cleanup
 - Efficiency over time
 
-If something improves *after deployment* → think **Curator**.
+> If something improves *after deployment* → think **Curator**.
 
 ---
 
@@ -460,27 +457,30 @@ Mostly on purpose. Well, not really - I was just a blind kitten bumping into wal
 
 ## The One Diagram That Made Everything Click
 
-┌─────────────────────────────────────────────┐
-│ ESXi │
-│ (Your existing hypervisor / home lab) │
-│ │
-│ ┌─────────────────────────────────────┐ │
-│ │ AHV Host (CE VM) │ │
-│ │ - Just a hypervisor │ │
-│ │ - Sees physical / virtual disks │ │
-│ │ - Runs VMs (including the CVM) │ │
-│ │ │ │
-│ │ ┌───────────────────────────┐ │ │
-│ │ │ CVM (Controller VM) │ │ │
-│ │ │ - Storage services │ │ │
-│ │ │ - Metadata (Zeus) │ │ │
-│ │ │ - I/O path (Stargate) │ │ │
-│ │ │ - Cluster brain │ │ │
-│ │ │ │ │ │
-│ │ │ cluster create happens HERE │ │ │
-│ │ └───────────────────────────┘ │ │
-│ └─────────────────────────────────────┘ │
-└─────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────┐
+│ ESXi                                                    │
+│ (Your existing hypervisor / home lab)                   │
+│                                                         │
+│  ┌───────────────────────────────────────────────────┐ │
+│  │ AHV Host (Nutanix CE VM)                            │ │
+│  │                                                     │ │
+│  │  - Just a hypervisor                                │ │
+│  │  - Sees physical / virtual disks                    │ │
+│  │  - Runs VMs (including the CVM)                     │ │
+│  │                                                     │ │
+│  │   ┌─────────────────────────────────────────────┐ │ │
+│  │   │ CVM (Controller VM)                           │ │ │
+│  │   │                                              │ │ │
+│  │   │  - Storage services (AOS)                     │ │ │
+│  │   │  - Metadata & leadership (Zeus)               │ │ │
+│  │   │  - I/O path (Stargate)                         │ │ │
+│  │   │  - Cluster brain                               │ │ │
+│  │   │                                              │ │ │
+│  │   │  cluster create happens HERE                  │ │ │
+│  │   └─────────────────────────────────────────────┘ │ │
+│  └───────────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────┘
+
 
 If you remember **nothing else**, remember this:
 
@@ -534,7 +534,7 @@ One of these days I will have to figure out if I can connect the CE VM to an ext
 - CD/DVD: Nutanix CE ISO
 - Nested virtualization: **ENABLED**
 
-<img src="/assets/images/Nutanix/vmsummary.png" alt="VM Summary" width="650">
+<img src="/assets/images/Nutanix/vmsummary2.png" alt="VM Summary" width="650">
 
 ### Common Failure: Nested Virtualization Disabled
 
@@ -810,4 +810,4 @@ It’s testing whether you understand **why Nutanix behaves the way it does**.
 
 Breaking it — safely — is the fastest way to get there.
 
-— **#dmitrywashere**
+**#dmitrywashere**
