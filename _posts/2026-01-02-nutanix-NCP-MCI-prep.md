@@ -457,6 +457,8 @@ Mostly on purpose. Well, not really - I was just a blind kitten bumping into wal
 
 ## The One Diagram That Made Everything Click
 
+```md
+```text
 ┌─────────────────────────────────────────────────────────┐
 │ ESXi                                                    │
 │ (Your existing hypervisor / home lab)                   │
