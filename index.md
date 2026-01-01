@@ -3,13 +3,39 @@ layout: home
 title: Welcome
 ---
 
-The best technology is useless without trust.
+# 🚚 We’re Moving (Well… Mostly)
 
-While data, cloud, and AI move at a relentless pace, the biggest challenge in tech isn't implementation—it's human connection. As a Systems Engineering Manager at Pure Storage, I’ve realized that mastery isn't just knowing the tech; it's mastering the pre-sales process.
+If you’re reading this, you’re probably looking for comments, reactions, or a way to join the conversation.
 
-I’m Dmitry Gorbatov, and this blog is dedicated to untangling the complexities of technical sales strategy. Here, we move past the specs and dive deep into best practices, human-centered deal design, and the emotional intelligence required to lead and win.
+Plot twist:  
+I lost a prolonged and humbling battle with browser security, iframes, and modern web “protections.”  
+(Inter-frame security: 1, Dmitry: 0)
 
-Don't worry, we'll maintain our technical edge. You'll still find practical, deep-dive content on Pure Storage, hybrid cloud strategies, and infrastructure insights right alongside our discussions on high-EQ selling. Join me as we explore both the skills and the systems that drive breakthrough results.
+So this blog is **moving / has moved** to a new home where discussion is easier and participation is encouraged.
+
+👉 **New home:** https://dmitrywashere.substack.com/
+
+I’ll still keep this site around for reference, archives, and the occasional experiment, but **new posts and active discussion will live on Substack**.
+
+If you’d like to:
+- comment
+- ask questions
+- disagree respectfully
+- or just follow along
+
+**Subscribe there (it’s free).**
+
+Same topics, same curiosity, same occasional overthinking:
+- technology & architecture  
+- value selling and pre-sales realities  
+- Systems Engineer experiences  
+- home-lab tinkering  
+
+Thanks for reading, and thanks for following me to the new neighborhood.
+
+— Dmitry  
+#dmitrywashere
+
 
 <img src="/assets/images/homepage/dmitry-was-here.jpg" alt="Banner alt text" width="400">
 
